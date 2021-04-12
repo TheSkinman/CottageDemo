@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "33095cd6-b90f-4423-9d87-50bce29bead7",
+		"name": "CottageDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Cottages",
+			"item": [
+				{
+					"name": "Add Cottage - 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Sea Turtle\",\r\n    \"Summary\": \"Sea Turtle Cottage is a perfect destination for your beach getaway!\",\r\n    \"Bathrooms\": 2.5,\r\n    \"BuiltDate\": \"2021-04-11T17:16:40\",\r\n    \"MaxGuest\": 6,\r\n    \"Bedrooms\": 2,\r\n    \"SquareFootage\": 1129,\r\n    \"Address\": \"231 Shellback St.\",\r\n    \"City\": \"Ocean Sores\",\r\n    \"State\": \"WA\",\r\n    \"Country\": \"USA\",\r\n    \"PostalCode\": \"98569\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/Cottages",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"Cottages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Cottage - 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Sea Monkeys\",\r\n    \"Summary\": \"Sea Monkeys Cottage is the perfect location for your next family vacation.\",\r\n    \"Bathrooms\": 3,\r\n    \"BuiltDate\": \"2021-04-11T17:16:40\",\r\n    \"MaxGuest\": 7,\r\n    \"Bedrooms\": 3,\r\n    \"SquareFootage\": 1415,\r\n    \"Address\": \"123 Sea lane\",\r\n    \"City\": \"Ocean Sores\",\r\n    \"State\": \"WA\",\r\n    \"Country\": \"USA\",\r\n    \"PostalCode\": \"98569\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/Cottages",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"Cottages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Cottage - 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Sandpiper\",\r\n    \"Summary\": \"The 'Sandpiper' Cottage is the perfect location for your next vacation.\",\r\n    \"Bathrooms\": 1,\r\n    \"BuiltDate\": \"2021-04-11T17:16:40\",\r\n    \"MaxGuest\": 4,\r\n    \"Bedrooms\": 1,\r\n    \"SquareFootage\": 706,\r\n    \"Address\": \"312 Bird Pl.\",\r\n    \"City\": \"Ocean Sores\",\r\n    \"State\": \"WA\",\r\n    \"Country\": \"USA\",\r\n    \"PostalCode\": \"98569\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44325/api/Cottages",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44325",
+							"path": [
+								"api",
+								"Cottages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get cottages - ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44325/api/Cottages",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"Cottages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get cottages - One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44325/api/Cottages/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"Cottages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cottage Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    <put the body of the item to be updated>\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/Cottages/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"Cottages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cottage - One",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Sea Monkeys\",\r\n    \"Summary\": \"Sea Monkeys Cottage is the perfect location for your next family vacation.\",\r\n    \"Bathrooms\": 3,\r\n    \"BuiltDate\": \"2021-04-11T17:16:40\",\r\n    \"MaxGuest\": 7,\r\n    \"BedRooms\": 3,\r\n    \"SquareFootage\": 1415,\r\n    \"CottageAddress\": {\r\n        \"Address\": \"123 Sea lane\",\r\n        \"City\": \"Ocean Sores\",\r\n        \"State\": \"WA\",\r\n        \"Country\": \"USA\",\r\n        \"PostalCode\": \"98569\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/api/Cottages/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"api",
+						"Cottages",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Cottage>
+@{
+    ViewData["Title"] = "Cottages";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Here is a list of cottages.</p>
+
+<a asp-action="AddCottage" class="btn btn-sm btn-primary">Add Cottage</a>
+
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Bathrooms</th>
+            <th>Bedrooms</th>
+            <th>Built Date</th>
+            <th>Summary</th>
+            <th>Max Guest</th>
+            <th>Square Footage</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal Code</th>
+            <th>Country</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.Id</td>
+                <td>@r.Name</td>
+                <td>@r.Bathrooms</td>
+                <td>@r.Bedrooms</td>
+                <td>@r.BuiltDate</td>
+                <td>@r.Summary</td>
+                <td>@r.MaxGuest</td>
+                <td>@r.SquareFootage</td>
+                <td>@r.Address</td>
+                <td>@r.City</td>
+                <td>@r.State</td>
+                <td>@r.PostalCode</td>
+                <td>@r.Country</td>
+                <td>
+                    <a asp-action="EditCottage" asp-route-id="@r.Id">
+                        <img class="actionicon" type="image" src="/icon/edit.png" />
+                    </a>
+                </td>
+                <td>
+                    <form asp-action="DeleteCottage" method="post">
+                        <input type="hidden" value="@r.Id" name="CottageId" />
+                        <input class="actionicon" type="image" src="/icon/delete.png" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

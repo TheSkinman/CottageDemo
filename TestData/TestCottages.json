@@ -1,0 +1,46 @@
+[
+{
+    "Name": "Sea Monkeys",
+    "Summary": "Sea Monkeys Cottage is the perfect location for your next family vacation.",
+    "Bathrooms": 3,
+    "BuiltDate": "2021-04-11T17:16:40",
+    "MaxGuest": 7,
+    "BedRooms": 3,
+    "SquareFootage": 1415,
+    "Address": "123 Sea lane",
+    "City": "Ocean Sores",
+    "State": "WA",
+    "Country": "USA",
+    "PostalCode": "98569"
+}
+,
+{
+    "Name": "Sea Turtle",
+    "Summary": "Sea Turtle Cottage is a perfect destination for your beach getaway!",
+    "Bathrooms": 2.5,
+    "BuiltDate": "2021-04-11T17:16:40",
+    "MaxGuest": 6,
+    "BedRooms": 2,
+    "SquareFootage": 1129,
+    "Address": "231 Shellback St.",
+    "City": "Ocean Sores",
+    "State": "WA",
+    "Country": "USA",
+    "PostalCode": "98569"
+}
+,
+{
+    "Name": "Sandpiper",
+    "Summary": "The 'Sandpiper' Cottage is the perfect location for your next vacation.",
+    "Bathrooms": 1,
+    "BuiltDate": "2021-04-11T17:16:40",
+    "MaxGuest": 4,
+    "BedRooms": 1,
+    "SquareFootage": 706,
+    "Address": "312 Bird Pl.",
+    "City": "Ocean Sores",
+    "State": "WA",
+    "Country": "USA",
+    "PostalCode": "98569"
+}
+]
